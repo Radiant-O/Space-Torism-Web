@@ -6,8 +6,8 @@
     <div class="line">
      </div>
      
-    <div class="hamburger">
-      <img src="../assets/utilities/icon-hamburger.svg" @click="toggleNav" alt="">
+    <div class="hamburger" v-if="!nav">
+      <img src="../assets/utilities/icon-hamburger.svg"  @click="toggleNav" alt="">
     </div>
     <nav class="navbar">
       <router-link 
@@ -43,7 +43,7 @@ export default {
         { id: "00", title: "HOME", to: "/" },
         { id: "01", title: "DESTINATION", to: "/destination/moon" },
         { id: "02", title: "CREW", to: "/crew/douglas-hurley" },
-        { id: "03", title: "TECHNOLOGY", to: "/technology/launch-vehicle" },
+        { id: "03", title: "TECHNOLOGY", to: "/technology/launch-vehicle" }, 
       ],
       nav: false
     };
