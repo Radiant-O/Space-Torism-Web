@@ -11,7 +11,8 @@
           <!-- The  router-link is loop for each of the links in the space technology and the destination is bind with the router params.slug -->
           <router-link
             class="span"
-            v-for="technology in technologies"            :key="technology.id"
+            v-for="technology in technologies"            
+            :key="technology.id"
             :to="{
               name: 'Tool',
               params: {
@@ -22,12 +23,15 @@
           </router-link>
         </div>
 
-        <router-view :key="$route.path"></router-view>
+        <transition name="slide">
+          <router-view :key="$route.path"></router-view>
+        </transition>
 
         <div class="launch_no mobile_no">
           <router-link 
             class="span"
-            v-for="technology in technologies"            :key="technology.id"
+            v-for="technology in technologies"            
+            :key="technology.id"
             :to="{
               name: 'Tool',
               params: {

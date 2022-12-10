@@ -1,9 +1,8 @@
 <template>
   <Navbar 
   />
-  <!-- <transition name="slide" mode="out-in">
-     </transition> -->
-    <router-view />
+   <router-view />
+
    
   
  
@@ -19,11 +18,5 @@ export default {
 </script>
 
 <style>
-/* .slide-leave-active,.slide-enter-active{
-    transition: opacity 1s, transform 1s
-}
-.slide-enter,.slide-leave-to{
-    opacity: 0;
-    transform: translateX(-20%)
-} */
+ 
 </style>

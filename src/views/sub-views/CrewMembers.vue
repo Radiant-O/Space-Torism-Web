@@ -1,4 +1,5 @@
 <template>
+
   <div class="abt_crew">
     <h3>{{ crewMem.role }}</h3>
     <h1>{{ crewMem.name }}</h1>
@@ -13,6 +14,7 @@
     />
     <hr class="img_line" />
   </div>
+
 </template>
 
 <script>
@@ -29,4 +31,24 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.slide-leave-active, .slide-enter-active{
+    transition: all 0.75s ease-out
+}
+.slide-enter-to{
+    position: absolute;
+    right: 0;
+}
+.slide-leave-from{
+    position: absolute;
+    left: 0;
+}
+.slide-enter-from{
+    position: absolute;
+    right: -100;
+}
+.slide-leave-to{
+    position: absolute;
+    left: -100%
+}
+</style>

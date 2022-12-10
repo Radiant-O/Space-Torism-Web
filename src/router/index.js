@@ -67,7 +67,9 @@ const routes = [
       let exist = space.crew.find((crewMember) => crewMember.slug == to.params.slug);
       if (exist) {
         next();
-      } 
+      } else{ 
+        next({name: 'Home'})
+      }
     },
   },
   {

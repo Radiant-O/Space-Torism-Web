@@ -1,4 +1,7 @@
-# new
+# Space Tourism Agency Website
+
+### This is built with Vuejs Cli, Vue Router with child component router, and Tailwind 
+
 
 ## Project setup
 ```

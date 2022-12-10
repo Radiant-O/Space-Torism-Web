@@ -23,7 +23,7 @@
   </header>
   <div class="mobile_nav" v-if="nav">
     <img  src="../assets/utilities/icon-close.svg" alt="" class="mobile_close" @click="toggleNav">
-    <nav class="mobile_links">
+    <nav class="mobile_links" @click="toggleNav">
       <router-link 
       v-for="link in navlinks" 
       :key="link.id" 
